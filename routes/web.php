@@ -15,5 +15,6 @@ Route::group(['middleware' => ['auth']], function () {
     Route::view('/', 'index')->name('home');
     Route::resource('invoices', 'InvoicesController');
     Route::resource('sections', 'SectionsController')->except(['edit', 'create']);
+    Route::resource('products', 'ProductsController')->except(['edit', 'create']);
 });
 

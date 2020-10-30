@@ -37,13 +37,16 @@
 				</a>
             </li>
             <li class="slide">
-                <a class="side-menu__item" data-toggle="slide" href="{{ url('/' . $page='#') }}">
+                <a class="side-menu__item" data-toggle="slide" href="#">
                     <i class="side-menu__icon fa fa-cogs"></i>
 					<span class="side-menu__label">الإعدادات</span><i class="angle fe fe-chevron-down"></i>
 				</a>
                 <ul class="slide-menu">
                     <li>
 						<a class="slide-item" href="{{ route('sections.index') }}">الأقسام</a>
+                    </li>
+                    <li>
+						<a class="slide-item" href="{{ route('products.index') }}">المنتجات</a>
 					</li>
                 </ul>
             </li>
